@@ -1,0 +1,43 @@
+#navbar{
+    align-items: center;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    & h2 a{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    form{
+       display: flex;
+       gap: .5rem;
+
+       & input {
+           border: none;
+           border-radius: 4px;
+           padding: 0.2rem 0.8rem;
+       }
+
+       & button{
+           align-items: center;
+           background-color: var(--amareloClaro);
+           border: 2px solid var(--amareloClaro);
+           border-radius: 4px;
+           color: var(--pretoTotal);
+           cursor: pointer;
+           display: flex;
+           font-size: 1.3rem;
+           padding: .3rem;
+           transition: .4s;
+
+           &:hover{
+            background-color:transparent;
+            color: var(--amareloClaro);
+           }
+       }
+    }
+
+}
