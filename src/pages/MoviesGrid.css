@@ -1,0 +1,36 @@
+/* Container principal */
+.container {
+    box-sizing: border-box;
+    height: 100%;
+    max-width: 100%;
+    padding: 16px;
+}
+
+.container .title {
+  color:var(--brancoTotal);
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Grid de cards */
+.movies-container {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Media query a partir de 640px - Ou seja terá 1 card até 640 e 2 cards de 641 a 1023*/
+@media (min-width: 640px) {
+  .movies-container {
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 20px;
+  }  
+}
+
+@media (min-width: 1024px) {
+  .movies-container {
+    grid-template-columns: repeat(3, 1fr);    
+  }
+}

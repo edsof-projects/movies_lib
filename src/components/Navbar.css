@@ -1,14 +1,15 @@
 #navbar{
     align-items: center;
-    background-color: #121212;
+    background-color: var(--cinzaClaro);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem;
 
     & h2 a{
         display: flex;
-        align-items: center;
-        gap: 0.5rem;
+        font-size: 1.2rem;
+        margin-right: -15px;
+        gap: 1rem;
     }
 
     form{
@@ -18,7 +19,9 @@
        & input {
            border: none;
            border-radius: 4px;
+           outline: none;
            padding: 0.2rem 0.8rem;
+           width: 7rem;
        }
 
        & button{

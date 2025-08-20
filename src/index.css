@@ -1,25 +1,27 @@
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
 }
 
 :root{
-   --pretoTotal       : #000;
+   --brancoTotal      : #ffffff;
+   --pretoTotal       : #000000;
+   --cinzaEscuro      : #111111;
+   --cinzaClaro       : #121212;
    --amareloClaro     : #f7d354;
    --amareloEscuro    : #b8930c;
-   --brancoFontes     : #ffffff;
 }
 
 body{
   background-color: var(--pretoTotal);
-  color: var(--brancoFontes);
+  color: var(--brancoTotal);
 }
 
 a{
-  text-decoration: none;
   color: var(--amareloClaro);
+  text-decoration: none;
   transition: .5s;
 
   &:hover{

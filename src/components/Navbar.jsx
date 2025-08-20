@@ -8,7 +8,8 @@ function Navbar() {
         <nav id="navbar">
             <h2>
                 <Link to="/">
-                    <BiCameraMovie /> MoviesLib
+                    <BiCameraMovie /> 
+                    MoviesLib
                 </Link>
             </h2>
            <form>

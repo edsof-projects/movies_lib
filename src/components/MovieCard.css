@@ -1,0 +1,76 @@
+/* movie-cards */
+.movie-card {
+  background-color:var(--cinzaClaro);
+  box-shadow: 0 2px 6px rgba(179, 179, 179, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* garante que nada saia do movie-card */
+  padding: .5rem;
+  width: 100%;
+}
+
+/* Imagens do movie-card */
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: .5rem;
+}
+
+/* Conteúdo do movie-card */
+.movie-card .subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.movie-card .nota {
+  margin-bottom: .5rem;
+  color: #a3a3a3;
+  display: flex;
+  font-size: 1.3rem;
+  gap: 4px;
+
+  & svg{
+    color: var(--amareloClaro);
+  }
+}
+
+/* Botões */
+.movie-card .btnDetalhes{    
+    border: none;
+    width: 100%; 
+    background-color: var(--amareloClaro);
+    border: 2px solid var(--amareloClaro);
+    border-radius: 4px;    
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: .6rem .3rem;
+    transition: .3s;
+    text-align: center;    
+       
+    &:hover{
+        background-color:transparent;
+    }
+} 
+    
+.movie-card .btnDetalhes a {
+  color: var(--pretoTotal);   /* força a cor preta */
+  display: block;             /* ocupa todo o botão */
+}
+
+.movie-card .btnDetalhes a:hover{
+    background-color:transparent;
+    color: var(--amareloClaro);
+}   
+
+@media (min-width: 640px) {
+ 
+  .movie-card {
+    /* Opcional: aumentar padding, borda ou sombra para telas maiores */
+    padding: 16px;
+  }
+
+}
