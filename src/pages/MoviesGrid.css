@@ -9,7 +9,7 @@
 .container .title {
   color:var(--brancoTotal);
   margin-bottom: 16px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
@@ -17,20 +17,31 @@
 .movies-container {
   display: grid;
   gap: 2rem;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
 }
 
-/* Media query a partir de 640px - Ou seja terá 1 card até 640 e 2 cards de 641 a 1023*/
+/* RESPONSIVIDADE - TESTE NO VISUAL E VEJA A PARTIR DE QUAL MEDIA DEVERAO SER ALTERADOS OS ELEMENTOS */
+
+/* Media query a partir de 640px - Ou seja terá 1 card até 640 / 2 cards de 641 a 1023 / 3 cards a partir de 1024px */
 @media (min-width: 640px) {
   .movies-container {
-    grid-template-columns: repeat(2, 1fr);  
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);  
   }  
+
+  .container .title {
+    font-size: 1.8rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
   .movies-container {
     grid-template-columns: repeat(3, 1fr);    
+  }
+
+   .container .title {
+    font-size: 2.5rem;
   }
 }

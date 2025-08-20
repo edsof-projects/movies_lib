@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react"
 import MovieCard from "../components/MovieCard"
 
-import { FaStar } from "react-icons/fa"
-
-import  Foto  from "/foto.png"
-
 import "./MoviesGrid.css"
 
 const moviesURL = import.meta.env.VITE_API
@@ -38,15 +34,7 @@ const Home = () => {
             topMovies.map((movie) => 
             <MovieCard key={movie.id} movie={movie}/>
             )
-          }
-
-          {/* <div className="card">
-             <img src={Foto} alt="foto"/>             
-             <h2 className="subtitle">The Shawshank Redemption</h2>
-             <p className="nota"><FaStar /> 8.9</p>
-             <button className="btnDetalhes">Detalhes</button>            
-          </div> */}
-       
+          }       
         </div>
     </div>
   )

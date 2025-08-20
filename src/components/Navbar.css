@@ -8,8 +8,8 @@
     & h2 a{
         display: flex;
         font-size: 1.2rem;
-        margin-right: -15px;
         gap: 1rem;
+        margin-right: -15px;
     }
 
     form{
@@ -43,4 +43,16 @@
        }
     }
 
+}
+
+/* RESPONSIVIDADE - TESTE NO VISUAL E VEJA A PARTIR DE QUAL MEDIA DEVERAO SER ALTERADOS OS ELEMENTOS */
+@media (min-width: 440px) {
+  #navbar form input {
+  width: 13rem;
+  }  
+}
+@media (min-width: 650px) {
+  #navbar form input {
+  width: 15rem;
+  }  
 }
