@@ -48,11 +48,14 @@
 /* RESPONSIVIDADE - TESTE NO VISUAL E VEJA A PARTIR DE QUAL MEDIA DEVERAO SER ALTERADOS OS ELEMENTOS */
 @media (min-width: 440px) {
   #navbar form input {
-  width: 13rem;
+    width: 13rem;
   }  
 }
 @media (min-width: 650px) {
   #navbar form input {
-  width: 15rem;
+    width: 15rem;
   }  
+  #navbar h2 a{
+    font-size: 1.5rem;
+  }
 }

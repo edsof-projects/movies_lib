@@ -9,8 +9,9 @@
 .container .title {
   color:var(--brancoTotal);
   margin-bottom: 16px;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Grid de cards */
@@ -19,6 +20,10 @@
   gap: 2rem;
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.query-text{
+  color: var(--amareloClaro);
 }
 
 /* RESPONSIVIDADE - TESTE NO VISUAL E VEJA A PARTIR DE QUAL MEDIA DEVERAO SER ALTERADOS OS ELEMENTOS */
@@ -42,6 +47,6 @@
   }
 
    .container .title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }

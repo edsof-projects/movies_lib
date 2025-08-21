@@ -4,7 +4,7 @@
   box-shadow: 0 2px 6px rgba(179, 179, 179, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden; /* garante que nada saia do movie-card */
   padding: .5rem;
   width: 100%;
@@ -12,8 +12,8 @@
 
 /* Imagens do movie-card */
 .movie-card img {
+  aspect-ratio: 2/3; /* exemplo: pôster padrão de cinema */
   display: block;
-  height: auto;
   margin-bottom: 1rem;
   object-fit: cover;
   width: 100%;
